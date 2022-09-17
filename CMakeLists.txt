@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.1)
 project(MyHTTP C CXX)
 ADD_SUBDIRECTORY(lib lib)
 ADD_SUBDIRECTORY(src bin)
+ADD_SUBDIRECTORY(test)
 
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_C_STANDARD 99)

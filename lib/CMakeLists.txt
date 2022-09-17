@@ -1,5 +1,3 @@
-cmake_minimum_required(VERSION 3.16)
-
 # AUX_SOURCE_DIRECTORY(. SRC_LIST)
 # # ADD_EXECUTABLE(MyHTTP  ${SRC_LIST})
 
