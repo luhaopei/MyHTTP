@@ -17,7 +17,11 @@
         "pthread.h": "c",
         "tcp_server.h": "c",
         "http_response.h": "c",
-        "epoll.h": "c"
+        "epoll.h": "c",
+        "poll.h": "c",
+        "string.h": "c",
+        "stat.h": "c",
+        "wait.h": "c"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }

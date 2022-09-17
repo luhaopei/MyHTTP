@@ -71,7 +71,8 @@ tcp_connection_new(int connected_fd, struct event_loop *eventLoop,
 
 
     char *buf = malloc(16);
-    sprintf(buf, "connection-%d\0", connected_fd);
+    memset(buf, 0, sizeof(buf));
+    sprintf(buf, "connection-%d", connected_fd);
     tcpConnection->name = buf;
 
     // add event read for the new connection

@@ -50,10 +50,8 @@ int main() {
         char *value = httpRequest->request_headers[i].value;
         printf("key == %s, value == %s\n", key, value);
     }
-
     struct http_response *httpResponse = http_response_new();
     onRequest(httpRequest, httpResponse);
-
     struct buffer *output = buffer_new();
     http_response_encode_buffer(httpResponse, output);
 }

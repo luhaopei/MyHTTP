@@ -28,7 +28,7 @@ static int poll_dispatch(struct event_loop *, struct timeval *);
 
 static void poll_clear(struct event_loop *);
 
-const struct event_dispatcher poll_dispatcher = {
+struct event_dispatcher poll_dispatcher = {
         "poll",
         poll_init,
         poll_add,

@@ -26,7 +26,7 @@ static int epoll_dispatch(struct event_loop *, struct timeval *);
 
 static void epoll_clear(struct event_loop *);
 
-const struct event_dispatcher epoll_dispatcher = {
+struct event_dispatcher epoll_dispatcher = {
         "epoll",
         epoll_init,
         epoll_add,

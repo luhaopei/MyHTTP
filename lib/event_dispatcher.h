@@ -3,6 +3,10 @@
 
 #include "channel.h"
 
+struct event_loop;
+struct timeval;
+struct channel;
+
 struct event_dispatcher{
     /* 对应实现 */
     const char *name;

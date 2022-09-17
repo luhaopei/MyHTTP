@@ -20,6 +20,7 @@
 #include    <signal.h>
 #include    <stdio.h>
 #include    <stdlib.h>
+#define __USE_GNU
 #include    <string.h>
 #include    <sys/stat.h>    /* for S_xxx file mode constants */
 #include    <sys/uio.h>        /* for iovec{} and readv/writev */
@@ -28,7 +29,7 @@
 #include    <sys/un.h>        /* for Unix domain sockets */
 
 #include    <sys/select.h>    /* for convenience */
-#ifndef HAVE_SYSCONF
+#ifdef HAVE_SYSCONF
 #include <sys/sysctl.h>
 #endif
 #include    <poll.h>        /* for convenience */
