@@ -52,6 +52,9 @@ int main() {
     }
     struct http_response *httpResponse = http_response_new();
     onRequest(httpRequest, httpResponse);
+    printf("httpResponse body:%s\n", httpResponse->body);
+
     struct buffer *output = buffer_new();
     http_response_encode_buffer(httpResponse, output);
+    return 0;
 }

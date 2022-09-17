@@ -4,8 +4,8 @@ ADD_SUBDIRECTORY(lib lib)
 ADD_SUBDIRECTORY(src bin)
 ADD_SUBDIRECTORY(test)
 
-set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_C_STANDARD 99)
+SET(CMAKE_CXX_STANDARD 11)
+SET(CMAKE_C_STANDARD 99)
 
 # Put the libaries and binaries that get built into directories at the
 # top of the build tree rather than in hard-to-find leaf directories.
