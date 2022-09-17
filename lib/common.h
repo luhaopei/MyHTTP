@@ -28,7 +28,9 @@
 #include    <sys/un.h>        /* for Unix domain sockets */
 
 #include    <sys/select.h>    /* for convenience */
-#include    <sys/sysctl.h>
+#ifndef HAVE_SYSCONF
+#include <sys/sysctl.h>
+#endif
 #include    <poll.h>        /* for convenience */
 #include    <strings.h>        /* for convenience */
 #include    <sys/ioctl.h>

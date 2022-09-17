@@ -1,4 +1,7 @@
 cmake_minimum_required(VERSION 3.16)
-AUX_SOURCE_DIRECTORY(. SRC_LIST)
-ADD_EXECUTABLE(MyHTTP  ${SRC_LIST})
-SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
+
+add_executable(http_server main.c)
+target_link_libraries(http_server MyHTTP)
+
+add_executable(http_server_test http_server_test.c)
+target_link_libraries(http_server_test MyHTTP)

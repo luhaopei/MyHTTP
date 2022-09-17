@@ -14,7 +14,10 @@
         "stdarg.h": "c",
         "buffer.h": "c",
         "thread_pool.h": "c",
-        "pthread.h": "c"
+        "pthread.h": "c",
+        "tcp_server.h": "c",
+        "http_response.h": "c",
+        "epoll.h": "c"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }

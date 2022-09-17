@@ -2,7 +2,7 @@
 // Created by shengym on 2019-07-07.
 //
 
-//#include    "common.h"
+#include    "common.h"
 #include    <stdarg.h>        /* ANSI C header file */
 #include    <syslog.h>        /* for syslog() */
 

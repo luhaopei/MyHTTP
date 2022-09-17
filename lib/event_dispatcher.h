@@ -2,7 +2,6 @@
 #define EVENT_DISPATCHER_H__
 
 #include "channel.h"
-#include "event_loop.h"
 
 struct event_dispatcher{
     /* 对应实现 */
