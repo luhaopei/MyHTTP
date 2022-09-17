@@ -9,7 +9,7 @@ void *event_loop_thread_run(void *arg) {
 
     // 初始化化event loop，之后通知主线程
     eventLoopThread->eventLoop = event_loop_init_with_name(eventLoopThread->thread_name);
-    yolanda_msgx("event loop thread init and signal, %s", eventLoopThread->thread_name);
+    myhttp_msgx("event loop thread init and signal, %s", eventLoopThread->thread_name);
     pthread_cond_signal(&eventLoopThread->cond);
 
     pthread_mutex_unlock(&eventLoopThread->mutex);
@@ -45,6 +45,6 @@ struct event_loop *event_loop_thread_start(struct event_loop_thread *eventLoopTh
     }
     assert(pthread_mutex_unlock(&eventLoopThread->mutex) == 0);
 
-    yolanda_msgx("event loop thread started, %s", eventLoopThread->thread_name);
+    myhttp_msgx("event loop thread started, %s", eventLoopThread->thread_name);
     return eventLoopThread->eventLoop;
 }

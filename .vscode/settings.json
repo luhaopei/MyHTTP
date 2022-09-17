@@ -13,7 +13,8 @@
         "inetaddress.h": "c",
         "stdarg.h": "c",
         "buffer.h": "c",
-        "thread_pool.h": "c"
+        "thread_pool.h": "c",
+        "pthread.h": "c"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
