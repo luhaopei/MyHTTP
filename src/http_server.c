@@ -53,7 +53,7 @@ int main(int c, char **v) {
 
     //初始tcp_server，可以指定线程数目，如果线程是0，就只有一个线程，既负责acceptor，也负责I/O
     struct TCPserver *tcpServer = tcp_server_init(eventLoop, acceptor, onConnectionCompleted, onMessage,
-                                                  onWriteCompleted, onConnectionClosed, 0);
+                                                  onWriteCompleted, onConnectionClosed, 3);
     tcp_server_start(tcpServer);
 
     // main thread for acceptor

@@ -10,6 +10,7 @@
 
 # SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 
+SET(CMAKE_BUILD_TYPE "Debug")
 if (EPOLL_EXISTS)
     set(myhttp_lib
             log.c

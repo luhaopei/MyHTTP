@@ -1,7 +1,7 @@
 
 SET(CMAKE_BUILD_TYPE "Debug")
 
-add_executable(http_server main.c)
+add_executable(http_server http_server.c)
 target_link_libraries(http_server MyHTTP)
 
 add_executable(http_server_test http_server_test.c)

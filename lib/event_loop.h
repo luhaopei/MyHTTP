@@ -14,7 +14,7 @@ struct channel_element {
     struct channel *channel;
     struct channel_element *next;
 };
-
+// 一个线程绑定的无限事件循环
 struct event_loop {
     int quit;
     struct event_dispatcher *eventDispatcher;
